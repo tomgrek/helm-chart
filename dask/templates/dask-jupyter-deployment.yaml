@@ -29,7 +29,7 @@ spec:
           volumeMounts:
           - name: config-volume
             mountPath: /home/jovyan/.jupyter
-          - name: persistent-mnt
+          - name: persistent
             mountPath: /home/jovyan/persistent
           env: 
           - name: EXTRA_CONDA_PACKAGES
@@ -42,7 +42,7 @@ spec:
       - name: config-volume
         configMap:
           name: {{ template "dask.jupyter-fullname" . }}-config
-      - name: persistent-vol
+      - name: persistent
         awsElasticBlockStore:
           volumeID: vol-0c8359d19c52dae1f
           fsType: ext4
