@@ -54,7 +54,7 @@ worker:
 
 jupyter:
   name: jupyter
-  image: "daskdev/dask-notebook"
+  image: tomgrek/jupyter #"daskdev/dask-notebook"
   imageTag: "latest"
   replicas: 1
   component: "jupyter-notebook"
