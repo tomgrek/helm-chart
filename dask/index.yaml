@@ -1,7 +1,7 @@
 apiVersion: v1
 entries:
   dask:
-  - created: 2018-02-14T04:11:08.982058639Z
+  - created: 2018-02-14T04:15:28.66244045Z
     description: Distributed computation in Python
     digest: 0b9bb5ef2b331474ab44c21a085a07128edababfab317375f62b79a9520cb452
     home: https://github.com/dask/dask
@@ -15,6 +15,6 @@ entries:
     sources:
     - https://github.com/dask/dask
     urls:
-    - dask/dask-0.1.0.tgz
+    - https://tomgrek.github.io/helm-chart/dask-0.1.0.tgz
     version: 0.1.0
-generated: 2018-02-14T04:11:08.981516748Z
+generated: 2018-02-14T04:15:28.661906603Z
