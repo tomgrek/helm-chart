@@ -1,0 +1,20 @@
+apiVersion: v1
+entries:
+  dask:
+  - created: 2018-02-14T04:11:08.982058639Z
+    description: Distributed computation in Python
+    digest: 0b9bb5ef2b331474ab44c21a085a07128edababfab317375f62b79a9520cb452
+    home: https://github.com/dask/dask
+    icon: https://avatars3.githubusercontent.com/u/17131925?v=3&s=200
+    maintainers:
+    - email: df.rodriguez143@gmail.com
+      name: danielfrg
+    - email: mrocklin@gmail.com
+      name: mrocklin
+    name: dask
+    sources:
+    - https://github.com/dask/dask
+    urls:
+    - dask/dask-0.1.0.tgz
+    version: 0.1.0
+generated: 2018-02-14T04:11:08.981516748Z
