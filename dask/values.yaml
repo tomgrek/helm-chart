@@ -46,11 +46,11 @@ worker:
     # adlfs
     # dask-ml
   limits:
-    cpu: 1
-    memory: 3.5G
+    cpu: 2
+    memory: 32G
   requests:
     cpu: 1
-    memory: 3.5G
+    memory: 32G
 
 jupyter:
   name: jupyter
@@ -74,7 +74,7 @@ jupyter:
     # dask-ml
   limits:
     cpu: 2
-    memory: 7.5G
+    memory: 32G
   requests:
     cpu: 2
-    memory: 7.5G
+    memory: 32G
