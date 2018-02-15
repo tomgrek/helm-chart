@@ -44,5 +44,5 @@ spec:
           name: {{ template "dask.jupyter-fullname" . }}-config
       - name: persistent
         awsElasticBlockStore:
-          volumeID: vol-0c8359d19c52dae1f
+          volumeID: vol-0b9031f8f4691bdac
           fsType: ext4
