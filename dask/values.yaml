@@ -61,7 +61,7 @@ jupyter:
   serviceType: "LoadBalancer"
   servicePort: 80
   containerPort: 8888
-  password: 'sha1:aae8550c0a44:9507d45e087d5ee481a5ce9f4f16f37a0867318c'  # 'dask'
+  password: 'sha1:5110b9bc2713:514fdc9340022f644820284ab06fd120896d3e8d'
   resources: {}
   condaPackages: >-
     # numba
