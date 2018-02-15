@@ -58,6 +58,7 @@ jupyter:
   imageTag: "latest"
   replicas: 1
   component: "jupyter-notebook"
+  volume: vol-0c6c84e29fd2f9d64
   serviceType: "LoadBalancer"
   servicePort: 80
   containerPort: 8888
