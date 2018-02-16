@@ -7,7 +7,7 @@
 
 scheduler:
   name: scheduler
-  image: "daskdev/dask"
+  image: "tomgrek/daskworker"
   imageTag: "latest"
   replicas: 1
   component: "dask-scheduler"
@@ -16,15 +16,7 @@ scheduler:
   containerPort: 8786
   resources: {}
   condaPackages: >-
-    feather-format
-    awscli
-    sqlalchemy
-    psycopg2-binary
   pipPackages: >-
-    s3fs
-    boto3
-    pyarrow
-    feather-format
   limits:
     cpu: 2
     memory: 7.5G
@@ -46,18 +38,7 @@ worker:
   containerPort: 8081
   resources: {}
   condaPackages: >-
-    sqlalchemy
-    psycopg2
-    awscli
-    feather-format
   pipPackages: >-
-    # gcsfs
-    boto3
-    s3fs
-    pyarrow
-    feather-format
-    # adlfs
-    # dask-ml
   limits:
     cpu: 2
     memory: 32G
@@ -80,10 +61,7 @@ jupyter:
   condaPackages: >-
     awscli
     feather-format
-    # numba
-    # xarray
   pipPackages: >-
-    # gcsfs
     boto3
     s3fs
     pyarrow
