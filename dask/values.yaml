@@ -16,7 +16,15 @@ scheduler:
   containerPort: 8786
   resources: {}
   condaPackages: >-
+    feather-format
+    awscli
+    sqlalchemy
+    psycopg2-binary
   pipPackages: >-
+    s3fs
+    boto3
+    pyarrow
+    feather-format
   limits:
     cpu: 2
     memory: 7.5G
@@ -41,8 +49,10 @@ worker:
     sqlalchemy
     psycopg2
     awscli
+    feather-format
   pipPackages: >-
     # gcsfs
+    boto3
     s3fs
     pyarrow
     feather-format
@@ -69,10 +79,12 @@ jupyter:
   resources: {}
   condaPackages: >-
     awscli
+    feather-format
     # numba
     # xarray
   pipPackages: >-
     # gcsfs
+    boto3
     s3fs
     pyarrow
     feather-format
