@@ -38,6 +38,10 @@ spec:
             value: {{ .Values.jupyter.pipPackages }}
           - name: DASK_SCHEDULER_ADDRESS
             value: {{ template "dask.scheduler-fullname" . }}:{{ .Values.scheduler.servicePort }}
+          - name: AWS_ACCESS_KEY_ID
+            value: {{ .Values.jupyter.awsAccessKeyId }}
+          - name: AWS_SECRET_ACCESS_KEY
+            value: {{ .Values.jupyter.awsSecretAccessKey }}
       volumes:
       - name: config-volume
         configMap:
