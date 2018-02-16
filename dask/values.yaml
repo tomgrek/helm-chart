@@ -39,10 +39,11 @@ worker:
   resources: {}
   condaPackages: >-
     sqlalchemy
-    # xarray
+    psycopg2
   pipPackages: >-
     # gcsfs
-    # s3fs
+    s3fs
+    pyarrow
     # adlfs
     # dask-ml
   limits:
