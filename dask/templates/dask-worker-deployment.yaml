@@ -34,3 +34,7 @@ spec:
             value: {{ .Values.worker.condaPackages }}
           - name: EXTRA_PIP_PACKAGES
             value: {{ .Values.worker.pipPackages }}
+          - name: AWS_ACCESS_KEY_ID
+            value: {{ .Values.worker.awsAccessKeyId }}
+          - name: AWS_SECRET_ACCESS_KEY
+            value: {{ .Values.worker.awsSecretAccessKey }}

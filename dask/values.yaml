@@ -40,10 +40,12 @@ worker:
   condaPackages: >-
     sqlalchemy
     psycopg2
+    awscli
   pipPackages: >-
     # gcsfs
     s3fs
     pyarrow
+    feather-format
     # adlfs
     # dask-ml
   limits:
@@ -66,11 +68,14 @@ jupyter:
   password: 'sha1:5110b9bc2713:514fdc9340022f644820284ab06fd120896d3e8d'
   resources: {}
   condaPackages: >-
+    awscli
     # numba
     # xarray
   pipPackages: >-
     # gcsfs
-    # s3fs
+    s3fs
+    pyarrow
+    feather-format
     # adlfs
     # dask-ml
   limits:
