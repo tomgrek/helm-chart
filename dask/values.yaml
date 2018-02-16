@@ -31,7 +31,7 @@ webUI:
 
 worker:
   name: worker
-  image: "daskdev/dask"
+  image: "tomgrek/daskworker"
   imageTag: "latest"
   replicas: 3
   component: "dask-worker"
