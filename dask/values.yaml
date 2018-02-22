@@ -20,22 +20,23 @@ scheduler:
   condaPackages: >-
   pipPackages: >-
   limits:
-    cpu: 2
-    memory: 7.5G
+    cpu: 3
+    memory: 4.5G
   requests:
-    cpu: 2
-    memory: 7.5G
+    cpu: 3
+    memory: 4.5G
 
 webUI:
   name: webui
   servicePort: 80
   containerPort: 8787
+  serviceType: "LoadBalancer"
 
 worker:
   name: worker
   image: "tomgrek/daskworker"
   imageTag: "latest"
-  replicas: 3
+  replicas: 6
   component: "dask-worker"
   containerPort: 8081
   resources: {}
@@ -43,10 +44,10 @@ worker:
   pipPackages: >-
   limits:
     cpu: 2
-    memory: 32G
+    memory: 16G
   requests:
     cpu: 2
-    memory: 32G
+    memory: 16G
 
 jupyter:
   name: jupyter
@@ -71,8 +72,8 @@ jupyter:
     # adlfs
     # dask-ml
   limits:
-    cpu: 2
-    memory: 32G
+    cpu: 4
+    memory: 31G
   requests:
-    cpu: 2
-    memory: 32G
+    cpu: 4
+    memory: 31G
